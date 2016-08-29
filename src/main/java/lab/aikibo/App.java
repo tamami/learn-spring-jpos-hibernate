@@ -21,6 +21,7 @@ public class App {
         Server server = (Server) context.getBean("server");
 
         server.start();
+        logger.debug("Server memulai aktifitas.");
   }
 
 
