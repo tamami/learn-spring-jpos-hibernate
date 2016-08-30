@@ -12,7 +12,12 @@ import java.text.SimpleDateFormat;
 import java.io.IOException;
 import java.util.Date;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class ProcessRequest implements ISORequestListener {
+
+  @Autowired
+  SpptServices spptServices;
 
   public boolean process(ISOSource isoSrc, ISOMsg isoMsg) {
     App.getLogger().debug("Server menerima koneksi dari [" + ((BaseChannel)isoSrc).getSocket().getInetAddress().getHostAddress() + "]");
@@ -35,7 +40,7 @@ public class ProcessRequest implements ISORequestListener {
     try {
       reply.setMTI("0810");
       reply.set(7, new SimpleDateFormat("MMddHHmmss").format(new Date()));
-      reply.set(39, "0");
+      reply.set(39, "00");
 
       isoSrc.send(reply);
     } catch(IOException ioe) {
@@ -51,8 +56,17 @@ public class ProcessRequest implements ISORequestListener {
     if(isoMsg.getString(3).equalsIgnoreCase("360000")) { // inquiry
       processInquiry(isoSrc, isoMsg);
     } else if(isoMsg.getString(3).equalsIgnoreCase("560000")) {
-      processTrx(isoSrc, isoMsg));
+      processTrx(isoSrc, isoMsg);
     }
   }
+
+  private void processInquiry(ISOSource isoSrc, ISOMsg isoMsg) {
+    App.getLogger().debug("Process Inquiry");
+    ISOMsg reply = (ISOMsg) isoMsg.clone();
+
+
+  }
+
+  private void processTrx(ISOSource isoSrc, ISOMsg isoMsg) {}
 
 }
