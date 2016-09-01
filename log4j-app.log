@@ -1,321 +1,733 @@
-2016-08-29 15:48:07 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
-2016-08-29 15:48:07 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2016-08-29 15:48:07 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-2016-08-29 15:48:07 INFO  AnnotationConfigApplicationContext:513 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7bc8804e: startup date [Mon Aug 29 15:48:07 WIB 2016]; root of context hierarchy
-2016-08-29 15:48:07 DEBUG AnnotationConfigApplicationContext:543 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@7bc8804e: org.springframework.beans.factory.support.DefaultListableBeanFactory@2bc4f785: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig]; root of factory hierarchy
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG StandardEnvironment:110 - Adding [class path resource [application.properties]] PropertySource with lowest search precedence
-2016-08-29 15:48:07 DEBUG ConfigurationClassBeanDefinitionReader:160 - Registered bean definition for imported @Configuration class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration
-2016-08-29 15:48:07 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.org.springframework.transaction.config.internalTransactionAdvisor()
-2016-08-29 15:48:07 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionAttributeSource()
-2016-08-29 15:48:07 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionInterceptor()
-2016-08-29 15:48:07 DEBUG ConfigurationClassBeanDefinitionReader:160 - Registered bean definition for imported @Configuration class lab.aikibo.config.HibernateConfiguration
-2016-08-29 15:48:07 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.HibernateConfiguration.boneCPDs()
-2016-08-29 15:48:07 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.AppConfig.server()
-2016-08-29 15:48:07 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.AppConfig; enhanced class name is: lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$79f66963
-2016-08-29 15:48:07 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'appConfig' existing class name 'lab.aikibo.config.AppConfig' with enhanced class name 'lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$79f66963'
-2016-08-29 15:48:07 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; enhanced class name is: org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9217cd8d
-2016-08-29 15:48:07 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' existing class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' with enhanced class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9217cd8d'
-2016-08-29 15:48:07 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.HibernateConfiguration; enhanced class name is: lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$797ae3e8
-2016-08-29 15:48:07 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'lab.aikibo.config.HibernateConfiguration' existing class name 'lab.aikibo.config.HibernateConfiguration' with enhanced class name 'lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$797ae3e8'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2016-08-29 15:48:07 DEBUG AnnotationConfigApplicationContext:649 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@3e346bae]
-2016-08-29 15:48:07 DEBUG AnnotationConfigApplicationContext:673 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@22733b4e]
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:672 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2bc4f785: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration,org.springframework.transaction.config.internalTransactionAdvisor,transactionAttributeSource,transactionInterceptor,lab.aikibo.config.HibernateConfiguration,boneCPDs,org.springframework.aop.config.internalAutoProxyCreator,server]; root of factory hierarchy
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'appConfig'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'appConfig'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'appConfig' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-29 15:48:07 DEBUG InjectionMetadata:71 - Registered injected element on class [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9217cd8d]: AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG InjectionMetadata:85 - Processing injected method of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry'
-2016-08-29 15:48:07 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionAttributeSource'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionAttributeSource'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionAttributeSource' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionAttributeSource'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionInterceptor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionInterceptor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionInterceptor' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'transactionInterceptor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionInterceptor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'appConfig'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionInterceptor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'lab.aikibo.config.HibernateConfiguration'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'lab.aikibo.config.HibernateConfiguration'
-2016-08-29 15:48:07 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$797ae3e8]: AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'lab.aikibo.config.HibernateConfiguration' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG InjectionMetadata:85 - Processing injected method of bean 'lab.aikibo.config.HibernateConfiguration': AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'environment'
-2016-08-29 15:48:07 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'lab.aikibo.config.HibernateConfiguration' to bean named 'environment'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'lab.aikibo.config.HibernateConfiguration'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'boneCPDs'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'boneCPDs'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'lab.aikibo.config.HibernateConfiguration'
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemProperties]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemEnvironment]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [class path resource [application.properties]]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.driverClassName' in [class path resource [application.properties]] with type [String] and value 'oracle.jdbc.driver.OracleDriver'
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemProperties]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemEnvironment]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [class path resource [application.properties]]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.url' in [class path resource [application.properties]] with type [String] and value 'jdbc:oracle:thin:pbbdummy/pbbdummy@192.168.2.7:1521/sismiopbck'
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemProperties]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemEnvironment]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [class path resource [application.properties]]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.username' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemProperties]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemEnvironment]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [class path resource [application.properties]]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.password' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'boneCPDs' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'boneCPDs'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'server'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'server'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'appConfig'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'server' to allow for resolving potential circular references
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'server'
-2016-08-29 15:48:07 DEBUG AnnotationConfigApplicationContext:700 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@6ef0ff5c]
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'lifecycleProcessor'
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [application.properties]]
-2016-08-29 15:48:07 DEBUG PropertySourcesPropertyResolver:103 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
-2016-08-29 15:48:07 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'server'
-2016-08-29 15:48:07 DEBUG App:26 - Server siap menerima koneksi pada port [15243]
-2016-08-29 15:48:07 DEBUG App:24 - Server memulai aktifitas.
-2016-08-29 15:53:46 DEBUG App:18 - Server menerima koneksi dari [127.0.0.1]
-2016-08-29 15:53:46 DEBUG App:31 - Accepting Network Management Request
-2016-08-29 15:59:21 DEBUG App:18 - Server menerima koneksi dari [127.0.0.1]
-2016-08-29 15:59:21 DEBUG App:31 - Accepting Network Management Request
-2016-08-29 16:00:51 DEBUG App:18 - Server menerima koneksi dari [127.0.0.1]
-2016-08-29 16:00:51 DEBUG App:31 - Accepting Network Management Request
-2016-08-31 13:51:30 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
-2016-08-31 13:51:30 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2016-08-31 13:51:30 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-2016-08-31 13:51:30 INFO  AnnotationConfigApplicationContext:513 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4d43a92: startup date [Wed Aug 31 13:51:30 WIB 2016]; root of context hierarchy
-2016-08-31 13:51:30 DEBUG AnnotationConfigApplicationContext:543 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@4d43a92: org.springframework.beans.factory.support.DefaultListableBeanFactory@7059de76: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig]; root of factory hierarchy
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
-2016-08-31 13:51:30 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2016-08-31 13:51:30 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-2016-08-31 13:51:30 DEBUG PathMatchingResourcePatternResolver:556 - Looking for matching resources in directory tree [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo]
-2016-08-31 13:51:30 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
-2016-08-31 13:51:30 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
-2016-08-31 13:51:30 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
-2016-08-31 13:51:30 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
-2016-08-31 13:51:30 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/model] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
-2016-08-31 13:51:30 DEBUG PathMatchingResourcePatternResolver:357 - Resolved location pattern [classpath*:lab/aikibo/**/*.class] to resources [file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/App.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/HibernateConfiguration.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/AppConfig.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDao.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDaoImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ProcessRequest.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServicesImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ServerImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ErrorRespon.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/Server.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServices.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/model/Sppt.class]]
-2016-08-31 13:51:30 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/HibernateConfiguration.class]
-2016-08-31 13:51:30 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDaoImpl.class]
-2016-08-31 13:51:30 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServicesImpl.class]
-2016-08-31 13:51:30 DEBUG StandardEnvironment:110 - Adding [class path resource [application.properties]] PropertySource with lowest search precedence
-2016-08-31 13:51:30 DEBUG ConfigurationClassBeanDefinitionReader:160 - Registered bean definition for imported @Configuration class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration
-2016-08-31 13:51:30 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.org.springframework.transaction.config.internalTransactionAdvisor()
-2016-08-31 13:51:30 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionAttributeSource()
-2016-08-31 13:51:30 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionInterceptor()
-2016-08-31 13:51:30 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.HibernateConfiguration.boneCPDs()
-2016-08-31 13:51:30 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.AppConfig.server()
-2016-08-31 13:51:30 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.AppConfig; enhanced class name is: lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$1fac5b9e
-2016-08-31 13:51:30 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'appConfig' existing class name 'lab.aikibo.config.AppConfig' with enhanced class name 'lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$1fac5b9e'
-2016-08-31 13:51:30 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.HibernateConfiguration; enhanced class name is: lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$1f30d623
-2016-08-31 13:51:30 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'hibernateConfiguration' existing class name 'lab.aikibo.config.HibernateConfiguration' with enhanced class name 'lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$1f30d623'
-2016-08-31 13:51:30 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; enhanced class name is: org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$37cdbfc8
-2016-08-31 13:51:30 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' existing class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' with enhanced class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$37cdbfc8'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
-2016-08-31 13:51:30 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2016-08-31 13:51:31 DEBUG AnnotationConfigApplicationContext:649 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@3c931acf]
-2016-08-31 13:51:31 DEBUG AnnotationConfigApplicationContext:673 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@50d4bb86]
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:672 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7059de76: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,hibernateConfiguration,storeProceduresDao,spptServices,org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration,org.springframework.transaction.config.internalTransactionAdvisor,transactionAttributeSource,transactionInterceptor,boneCPDs,org.springframework.aop.config.internalAutoProxyCreator,server]; root of factory hierarchy
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'appConfig'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'appConfig'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'appConfig' to allow for resolving potential circular references
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-31 13:51:31 DEBUG InjectionMetadata:71 - Registered injected element on class [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$37cdbfc8]: AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' to allow for resolving potential circular references
-2016-08-31 13:51:31 DEBUG InjectionMetadata:85 - Processing injected method of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry'
-2016-08-31 13:51:31 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionAttributeSource'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionAttributeSource'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionAttributeSource' to allow for resolving potential circular references
-2016-08-31 13:51:31 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionAttributeSource'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionInterceptor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionInterceptor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionInterceptor' to allow for resolving potential circular references
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'transactionInterceptor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionInterceptor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'appConfig'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'hibernateConfiguration'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'hibernateConfiguration'
-2016-08-31 13:51:31 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$1f30d623]: AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'hibernateConfiguration' to allow for resolving potential circular references
-2016-08-31 13:51:31 DEBUG InjectionMetadata:85 - Processing injected method of bean 'hibernateConfiguration': AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'environment'
-2016-08-31 13:51:31 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'hibernateConfiguration' to bean named 'environment'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'hibernateConfiguration'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'storeProceduresDao'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'storeProceduresDao'
-2016-08-31 13:51:31 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.dao.StoreProceduresDaoImpl]: AutowiredFieldElement for private com.jolbox.bonecp.BoneCPDataSource lab.aikibo.dao.StoreProceduresDaoImpl.boneCPDs
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'storeProceduresDao' to allow for resolving potential circular references
-2016-08-31 13:51:31 DEBUG InjectionMetadata:85 - Processing injected method of bean 'storeProceduresDao': AutowiredFieldElement for private com.jolbox.bonecp.BoneCPDataSource lab.aikibo.dao.StoreProceduresDaoImpl.boneCPDs
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'boneCPDs'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'boneCPDs'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'hibernateConfiguration'
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemProperties]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemEnvironment]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [class path resource [application.properties]]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.driverClassName' in [class path resource [application.properties]] with type [String] and value 'oracle.jdbc.driver.OracleDriver'
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemProperties]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemEnvironment]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [class path resource [application.properties]]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.url' in [class path resource [application.properties]] with type [String] and value 'jdbc:oracle:thin:pbbdummy/pbbdummy@192.168.2.7:1521/sismiopbck'
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemProperties]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemEnvironment]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [class path resource [application.properties]]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.username' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemProperties]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemEnvironment]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [class path resource [application.properties]]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.password' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'boneCPDs' to allow for resolving potential circular references
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'boneCPDs'
-2016-08-31 13:51:31 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'storeProceduresDao' to bean named 'boneCPDs'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'storeProceduresDao'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'spptServices'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'spptServices'
-2016-08-31 13:51:31 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.services.SpptServicesImpl]: AutowiredFieldElement for private lab.aikibo.dao.StoreProceduresDao lab.aikibo.services.SpptServicesImpl.spDao
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'spptServices' to allow for resolving potential circular references
-2016-08-31 13:51:31 DEBUG InjectionMetadata:85 - Processing injected method of bean 'spptServices': AutowiredFieldElement for private lab.aikibo.dao.StoreProceduresDao lab.aikibo.services.SpptServicesImpl.spDao
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'storeProceduresDao'
-2016-08-31 13:51:31 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'spptServices' to bean named 'storeProceduresDao'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG AnnotationTransactionAttributeSource:108 - Adding transactional method 'SpptServicesImpl.getSpptByNopThn' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-2016-08-31 13:51:31 DEBUG InfrastructureAdvisorAutoProxyCreator:593 - Creating implicit proxy for bean 'spptServices' with 0 common interceptors and 1 specific interceptors
-2016-08-31 13:51:31 DEBUG JdkDynamicAopProxy:117 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [lab.aikibo.services.SpptServicesImpl@ff0fa71]
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'spptServices'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionInterceptor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'boneCPDs'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'server'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'server'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'appConfig'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'server' to allow for resolving potential circular references
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'server'
-2016-08-31 13:51:31 DEBUG AnnotationConfigApplicationContext:700 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@62bda58a]
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'lifecycleProcessor'
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [application.properties]]
-2016-08-31 13:51:31 DEBUG PropertySourcesPropertyResolver:103 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
-2016-08-31 13:51:31 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'server'
-2016-08-31 13:51:31 DEBUG App:26 - Server siap menerima koneksi pada port [15243]
-2016-08-31 13:51:31 DEBUG App:24 - Server memulai aktifitas.
+2016-09-01 09:09:58 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 09:09:58 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 09:09:58 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 09:09:58 INFO  AnnotationConfigApplicationContext:513 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3228b817: startup date [Thu Sep 01 09:09:58 WIB 2016]; root of context hierarchy
+2016-09-01 09:09:58 DEBUG AnnotationConfigApplicationContext:543 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@3228b817: org.springframework.beans.factory.support.DefaultListableBeanFactory@5e50626e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig]; root of factory hierarchy
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 09:09:58 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 09:09:58 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 09:09:58 DEBUG PathMatchingResourcePatternResolver:556 - Looking for matching resources in directory tree [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo]
+2016-09-01 09:09:58 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 09:09:58 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 09:09:58 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 09:09:58 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 09:09:58 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/model] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 09:09:58 DEBUG PathMatchingResourcePatternResolver:357 - Resolved location pattern [classpath*:lab/aikibo/**/*.class] to resources [file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/App.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/HibernateConfiguration.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/AppConfig.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDao.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDaoImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ProcessRequest.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServicesImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ServerImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ErrorRespon.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/Server.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServices.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/model/Sppt.class]]
+2016-09-01 09:09:58 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/HibernateConfiguration.class]
+2016-09-01 09:09:58 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDaoImpl.class]
+2016-09-01 09:09:58 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServicesImpl.class]
+2016-09-01 09:09:58 DEBUG StandardEnvironment:110 - Adding [class path resource [application.properties]] PropertySource with lowest search precedence
+2016-09-01 09:09:58 DEBUG ConfigurationClassBeanDefinitionReader:160 - Registered bean definition for imported @Configuration class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration
+2016-09-01 09:09:58 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.org.springframework.transaction.config.internalTransactionAdvisor()
+2016-09-01 09:09:58 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionAttributeSource()
+2016-09-01 09:09:58 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionInterceptor()
+2016-09-01 09:09:58 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.HibernateConfiguration.boneCPDs()
+2016-09-01 09:09:58 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.AppConfig.server()
+2016-09-01 09:09:58 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.AppConfig; enhanced class name is: lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$7414188c
+2016-09-01 09:09:58 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'appConfig' existing class name 'lab.aikibo.config.AppConfig' with enhanced class name 'lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$7414188c'
+2016-09-01 09:09:58 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.HibernateConfiguration; enhanced class name is: lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$73989311
+2016-09-01 09:09:58 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'hibernateConfiguration' existing class name 'lab.aikibo.config.HibernateConfiguration' with enhanced class name 'lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$73989311'
+2016-09-01 09:09:58 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; enhanced class name is: org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c357cb6
+2016-09-01 09:09:58 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' existing class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' with enhanced class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c357cb6'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 09:09:58 DEBUG AnnotationConfigApplicationContext:649 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@35ba52dc]
+2016-09-01 09:09:58 DEBUG AnnotationConfigApplicationContext:673 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@7add1869]
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:672 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e50626e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,hibernateConfiguration,storeProceduresDao,spptServices,org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration,org.springframework.transaction.config.internalTransactionAdvisor,transactionAttributeSource,transactionInterceptor,boneCPDs,org.springframework.aop.config.internalAutoProxyCreator,server]; root of factory hierarchy
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'appConfig'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'appConfig'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'appConfig' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 09:09:58 DEBUG InjectionMetadata:71 - Registered injected element on class [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c357cb6]: AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG InjectionMetadata:85 - Processing injected method of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry'
+2016-09-01 09:09:58 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionAttributeSource'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionAttributeSource'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionAttributeSource' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionAttributeSource'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionInterceptor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionInterceptor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionInterceptor' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'transactionInterceptor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionInterceptor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'appConfig'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'hibernateConfiguration'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'hibernateConfiguration'
+2016-09-01 09:09:58 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$73989311]: AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'hibernateConfiguration' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG InjectionMetadata:85 - Processing injected method of bean 'hibernateConfiguration': AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'environment'
+2016-09-01 09:09:58 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'hibernateConfiguration' to bean named 'environment'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'hibernateConfiguration'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'storeProceduresDao'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'storeProceduresDao'
+2016-09-01 09:09:58 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.dao.StoreProceduresDaoImpl]: AutowiredFieldElement for private com.jolbox.bonecp.BoneCPDataSource lab.aikibo.dao.StoreProceduresDaoImpl.boneCPDs
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'storeProceduresDao' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG InjectionMetadata:85 - Processing injected method of bean 'storeProceduresDao': AutowiredFieldElement for private com.jolbox.bonecp.BoneCPDataSource lab.aikibo.dao.StoreProceduresDaoImpl.boneCPDs
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'boneCPDs'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'boneCPDs'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'hibernateConfiguration'
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemProperties]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemEnvironment]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [class path resource [application.properties]]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.driverClassName' in [class path resource [application.properties]] with type [String] and value 'oracle.jdbc.driver.OracleDriver'
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemProperties]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemEnvironment]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [class path resource [application.properties]]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.url' in [class path resource [application.properties]] with type [String] and value 'jdbc:oracle:thin:pbbdummy/pbbdummy@192.168.2.7:1521/sismiopbck'
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemProperties]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemEnvironment]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [class path resource [application.properties]]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.username' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemProperties]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemEnvironment]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [class path resource [application.properties]]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.password' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'boneCPDs' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'boneCPDs'
+2016-09-01 09:09:58 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'storeProceduresDao' to bean named 'boneCPDs'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'storeProceduresDao'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'spptServices'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'spptServices'
+2016-09-01 09:09:58 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.services.SpptServicesImpl]: AutowiredFieldElement for private lab.aikibo.dao.StoreProceduresDao lab.aikibo.services.SpptServicesImpl.spDao
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'spptServices' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG InjectionMetadata:85 - Processing injected method of bean 'spptServices': AutowiredFieldElement for private lab.aikibo.dao.StoreProceduresDao lab.aikibo.services.SpptServicesImpl.spDao
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'storeProceduresDao'
+2016-09-01 09:09:58 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'spptServices' to bean named 'storeProceduresDao'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG AnnotationTransactionAttributeSource:108 - Adding transactional method 'SpptServicesImpl.getSpptByNopThn' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2016-09-01 09:09:58 DEBUG InfrastructureAdvisorAutoProxyCreator:593 - Creating implicit proxy for bean 'spptServices' with 0 common interceptors and 1 specific interceptors
+2016-09-01 09:09:58 DEBUG JdkDynamicAopProxy:117 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [lab.aikibo.services.SpptServicesImpl@544a2db4]
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'spptServices'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionInterceptor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'boneCPDs'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'server'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'server'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'appConfig'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'server' to allow for resolving potential circular references
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'server'
+2016-09-01 09:09:58 DEBUG AnnotationConfigApplicationContext:700 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@2c8d4361]
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [application.properties]]
+2016-09-01 09:09:58 DEBUG PropertySourcesPropertyResolver:103 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2016-09-01 09:09:58 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'server'
+2016-09-01 09:09:58 DEBUG App:26 - Server siap menerima koneksi pada port [15243]
+2016-09-01 09:09:58 DEBUG App:24 - Server memulai aktifitas.
+2016-09-01 13:05:37 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 13:05:37 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 13:05:37 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 13:05:37 INFO  AnnotationConfigApplicationContext:513 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@b729724: startup date [Thu Sep 01 13:05:37 WIB 2016]; root of context hierarchy
+2016-09-01 13:05:37 DEBUG AnnotationConfigApplicationContext:543 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@b729724: org.springframework.beans.factory.support.DefaultListableBeanFactory@4c0247b5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig]; root of factory hierarchy
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 13:05:37 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 13:05:37 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 13:05:37 DEBUG PathMatchingResourcePatternResolver:556 - Looking for matching resources in directory tree [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo]
+2016-09-01 13:05:37 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 13:05:37 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/util] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 13:05:37 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 13:05:37 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 13:05:37 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 13:05:37 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/model] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 13:05:37 DEBUG PathMatchingResourcePatternResolver:357 - Resolved location pattern [classpath*:lab/aikibo/**/*.class] to resources [file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/util/StringUtil.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/App.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/HibernateConfiguration.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/AppConfig.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDao.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDaoImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ProcessRequest.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServicesImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ServerImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ErrorRespon.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/Server.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServices.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/model/Sppt.class]]
+2016-09-01 13:05:37 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/HibernateConfiguration.class]
+2016-09-01 13:05:37 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDaoImpl.class]
+2016-09-01 13:05:37 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServicesImpl.class]
+2016-09-01 13:05:37 DEBUG StandardEnvironment:110 - Adding [class path resource [application.properties]] PropertySource with lowest search precedence
+2016-09-01 13:05:37 DEBUG ConfigurationClassBeanDefinitionReader:160 - Registered bean definition for imported @Configuration class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration
+2016-09-01 13:05:37 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.org.springframework.transaction.config.internalTransactionAdvisor()
+2016-09-01 13:05:37 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionAttributeSource()
+2016-09-01 13:05:37 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionInterceptor()
+2016-09-01 13:05:37 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.HibernateConfiguration.boneCPDs()
+2016-09-01 13:05:37 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.AppConfig.server()
+2016-09-01 13:05:37 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.AppConfig; enhanced class name is: lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$8b2df9ce
+2016-09-01 13:05:37 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'appConfig' existing class name 'lab.aikibo.config.AppConfig' with enhanced class name 'lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$8b2df9ce'
+2016-09-01 13:05:37 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.HibernateConfiguration; enhanced class name is: lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$8ab27453
+2016-09-01 13:05:37 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'hibernateConfiguration' existing class name 'lab.aikibo.config.HibernateConfiguration' with enhanced class name 'lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$8ab27453'
+2016-09-01 13:05:37 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; enhanced class name is: org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a34f5df8
+2016-09-01 13:05:37 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' existing class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' with enhanced class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a34f5df8'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 13:05:37 DEBUG AnnotationConfigApplicationContext:649 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@7d504472]
+2016-09-01 13:05:37 DEBUG AnnotationConfigApplicationContext:673 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@d9216f]
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:672 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c0247b5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,hibernateConfiguration,storeProceduresDao,spptServices,org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration,org.springframework.transaction.config.internalTransactionAdvisor,transactionAttributeSource,transactionInterceptor,boneCPDs,org.springframework.aop.config.internalAutoProxyCreator,server]; root of factory hierarchy
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'appConfig'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'appConfig'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'appConfig' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 13:05:37 DEBUG InjectionMetadata:71 - Registered injected element on class [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a34f5df8]: AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG InjectionMetadata:85 - Processing injected method of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry'
+2016-09-01 13:05:37 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionAttributeSource'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionAttributeSource'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionAttributeSource' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionAttributeSource'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionInterceptor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionInterceptor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionInterceptor' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'transactionInterceptor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionInterceptor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'appConfig'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'hibernateConfiguration'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'hibernateConfiguration'
+2016-09-01 13:05:37 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$8ab27453]: AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'hibernateConfiguration' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG InjectionMetadata:85 - Processing injected method of bean 'hibernateConfiguration': AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'environment'
+2016-09-01 13:05:37 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'hibernateConfiguration' to bean named 'environment'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'hibernateConfiguration'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'storeProceduresDao'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'storeProceduresDao'
+2016-09-01 13:05:37 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.dao.StoreProceduresDaoImpl]: AutowiredFieldElement for private com.jolbox.bonecp.BoneCPDataSource lab.aikibo.dao.StoreProceduresDaoImpl.boneCPDs
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'storeProceduresDao' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG InjectionMetadata:85 - Processing injected method of bean 'storeProceduresDao': AutowiredFieldElement for private com.jolbox.bonecp.BoneCPDataSource lab.aikibo.dao.StoreProceduresDaoImpl.boneCPDs
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'boneCPDs'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'boneCPDs'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'hibernateConfiguration'
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemProperties]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemEnvironment]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [class path resource [application.properties]]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.driverClassName' in [class path resource [application.properties]] with type [String] and value 'oracle.jdbc.driver.OracleDriver'
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemProperties]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemEnvironment]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [class path resource [application.properties]]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.url' in [class path resource [application.properties]] with type [String] and value 'jdbc:oracle:thin:pbbdummy/pbbdummy@192.168.2.7:1521/sismiopbck'
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemProperties]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemEnvironment]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [class path resource [application.properties]]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.username' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemProperties]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemEnvironment]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [class path resource [application.properties]]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.password' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'boneCPDs' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'boneCPDs'
+2016-09-01 13:05:37 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'storeProceduresDao' to bean named 'boneCPDs'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'storeProceduresDao'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'spptServices'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'spptServices'
+2016-09-01 13:05:37 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.services.SpptServicesImpl]: AutowiredFieldElement for private lab.aikibo.dao.StoreProceduresDao lab.aikibo.services.SpptServicesImpl.spDao
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'spptServices' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG InjectionMetadata:85 - Processing injected method of bean 'spptServices': AutowiredFieldElement for private lab.aikibo.dao.StoreProceduresDao lab.aikibo.services.SpptServicesImpl.spDao
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'storeProceduresDao'
+2016-09-01 13:05:37 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'spptServices' to bean named 'storeProceduresDao'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG AnnotationTransactionAttributeSource:108 - Adding transactional method 'SpptServicesImpl.getSpptByNopThn' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2016-09-01 13:05:37 DEBUG InfrastructureAdvisorAutoProxyCreator:593 - Creating implicit proxy for bean 'spptServices' with 0 common interceptors and 1 specific interceptors
+2016-09-01 13:05:37 DEBUG JdkDynamicAopProxy:117 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [lab.aikibo.services.SpptServicesImpl@75779834]
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'spptServices'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionInterceptor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'boneCPDs'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'server'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'server'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'appConfig'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'server' to allow for resolving potential circular references
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'server'
+2016-09-01 13:05:37 DEBUG AnnotationConfigApplicationContext:700 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@12a646ff]
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [application.properties]]
+2016-09-01 13:05:37 DEBUG PropertySourcesPropertyResolver:103 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2016-09-01 13:05:37 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'server'
+2016-09-01 13:05:37 DEBUG App:26 - Server siap menerima koneksi pada port [15243]
+2016-09-01 13:05:37 DEBUG App:24 - Server memulai aktifitas.
+2016-09-01 13:29:16 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 13:29:16 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 13:32:59 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 13:32:59 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:14:11 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:14:11 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:20:50 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:20:50 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:22:36 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:22:36 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:28:03 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:28:03 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:30:15 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:30:15 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:30:54 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:30:54 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:32:07 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:32:07 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:32:58 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:32:58 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:34:14 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:34:14 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:37:32 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:37:32 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 14:38:24 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 14:38:24 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 15:06:46 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 15:06:46 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 15:20:33 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 15:20:33 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 15:20:57 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 15:20:57 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 15:41:08 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 15:41:08 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 15:41:08 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 15:41:08 INFO  AnnotationConfigApplicationContext:513 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3228b817: startup date [Thu Sep 01 15:41:08 WIB 2016]; root of context hierarchy
+2016-09-01 15:41:08 DEBUG AnnotationConfigApplicationContext:543 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@3228b817: org.springframework.beans.factory.support.DefaultListableBeanFactory@5e50626e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig]; root of factory hierarchy
+2016-09-01 15:41:08 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 15:41:08 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 15:41:08 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 15:41:08 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 15:41:09 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 15:41:09 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 15:41:09 DEBUG PathMatchingResourcePatternResolver:556 - Looking for matching resources in directory tree [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo]
+2016-09-01 15:41:09 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 15:41:09 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/util] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 15:41:09 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 15:41:09 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 15:41:09 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 15:41:09 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/model] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 15:41:09 DEBUG PathMatchingResourcePatternResolver:357 - Resolved location pattern [classpath*:lab/aikibo/**/*.class] to resources [file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/util/StringUtil.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/App.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/HibernateConfiguration.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/AppConfig.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDao.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDaoImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ProcessRequest.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServicesImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ServerImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ErrorRespon.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/Server.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServices.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/model/Sppt.class]]
+2016-09-01 15:41:09 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/HibernateConfiguration.class]
+2016-09-01 15:41:09 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDaoImpl.class]
+2016-09-01 15:41:09 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServicesImpl.class]
+2016-09-01 15:41:09 DEBUG StandardEnvironment:110 - Adding [class path resource [application.properties]] PropertySource with lowest search precedence
+2016-09-01 15:41:09 DEBUG ConfigurationClassBeanDefinitionReader:160 - Registered bean definition for imported @Configuration class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration
+2016-09-01 15:41:09 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.org.springframework.transaction.config.internalTransactionAdvisor()
+2016-09-01 15:41:09 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionAttributeSource()
+2016-09-01 15:41:09 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionInterceptor()
+2016-09-01 15:41:09 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.HibernateConfiguration.boneCPDs()
+2016-09-01 15:41:09 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.AppConfig.server()
+2016-09-01 15:41:09 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.AppConfig; enhanced class name is: lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$7414188c
+2016-09-01 15:41:09 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'appConfig' existing class name 'lab.aikibo.config.AppConfig' with enhanced class name 'lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$7414188c'
+2016-09-01 15:41:09 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.HibernateConfiguration; enhanced class name is: lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$73989311
+2016-09-01 15:41:09 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'hibernateConfiguration' existing class name 'lab.aikibo.config.HibernateConfiguration' with enhanced class name 'lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$73989311'
+2016-09-01 15:41:09 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; enhanced class name is: org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c357cb6
+2016-09-01 15:41:09 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' existing class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' with enhanced class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c357cb6'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 15:41:09 DEBUG AnnotationConfigApplicationContext:649 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@35ba52dc]
+2016-09-01 15:41:09 DEBUG AnnotationConfigApplicationContext:673 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@7add1869]
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:672 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e50626e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,hibernateConfiguration,storeProceduresDao,spptServices,org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration,org.springframework.transaction.config.internalTransactionAdvisor,transactionAttributeSource,transactionInterceptor,boneCPDs,org.springframework.aop.config.internalAutoProxyCreator,server]; root of factory hierarchy
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'appConfig'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'appConfig'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'appConfig' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 15:41:09 DEBUG InjectionMetadata:71 - Registered injected element on class [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c357cb6]: AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG InjectionMetadata:85 - Processing injected method of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry'
+2016-09-01 15:41:09 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionAttributeSource'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionAttributeSource'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionAttributeSource' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionAttributeSource'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionInterceptor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionInterceptor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionInterceptor' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'transactionInterceptor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionInterceptor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'appConfig'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'hibernateConfiguration'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'hibernateConfiguration'
+2016-09-01 15:41:09 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$73989311]: AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'hibernateConfiguration' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG InjectionMetadata:85 - Processing injected method of bean 'hibernateConfiguration': AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'environment'
+2016-09-01 15:41:09 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'hibernateConfiguration' to bean named 'environment'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'hibernateConfiguration'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'storeProceduresDao'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'storeProceduresDao'
+2016-09-01 15:41:09 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.dao.StoreProceduresDaoImpl]: AutowiredFieldElement for private com.jolbox.bonecp.BoneCPDataSource lab.aikibo.dao.StoreProceduresDaoImpl.boneCPDs
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'storeProceduresDao' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG InjectionMetadata:85 - Processing injected method of bean 'storeProceduresDao': AutowiredFieldElement for private com.jolbox.bonecp.BoneCPDataSource lab.aikibo.dao.StoreProceduresDaoImpl.boneCPDs
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'boneCPDs'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'boneCPDs'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'hibernateConfiguration'
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemProperties]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemEnvironment]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [class path resource [application.properties]]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.driverClassName' in [class path resource [application.properties]] with type [String] and value 'oracle.jdbc.driver.OracleDriver'
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemProperties]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemEnvironment]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [class path resource [application.properties]]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.url' in [class path resource [application.properties]] with type [String] and value 'jdbc:oracle:thin:pbbdummy/pbbdummy@192.168.2.7:1521/sismiopbck'
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemProperties]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemEnvironment]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [class path resource [application.properties]]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.username' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemProperties]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemEnvironment]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [class path resource [application.properties]]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.password' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'boneCPDs' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'boneCPDs'
+2016-09-01 15:41:09 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'storeProceduresDao' to bean named 'boneCPDs'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'storeProceduresDao'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'spptServices'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'spptServices'
+2016-09-01 15:41:09 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.services.SpptServicesImpl]: AutowiredFieldElement for private lab.aikibo.dao.StoreProceduresDao lab.aikibo.services.SpptServicesImpl.spDao
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'spptServices' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG InjectionMetadata:85 - Processing injected method of bean 'spptServices': AutowiredFieldElement for private lab.aikibo.dao.StoreProceduresDao lab.aikibo.services.SpptServicesImpl.spDao
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'storeProceduresDao'
+2016-09-01 15:41:09 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'spptServices' to bean named 'storeProceduresDao'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG AnnotationTransactionAttributeSource:108 - Adding transactional method 'SpptServicesImpl.getSpptByNopThn' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2016-09-01 15:41:09 DEBUG InfrastructureAdvisorAutoProxyCreator:593 - Creating implicit proxy for bean 'spptServices' with 0 common interceptors and 1 specific interceptors
+2016-09-01 15:41:09 DEBUG JdkDynamicAopProxy:117 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [lab.aikibo.services.SpptServicesImpl@544a2db4]
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'spptServices'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionInterceptor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'boneCPDs'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'server'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'server'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'appConfig'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'server' to allow for resolving potential circular references
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'server'
+2016-09-01 15:41:09 DEBUG AnnotationConfigApplicationContext:700 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@2c8d4361]
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [application.properties]]
+2016-09-01 15:41:09 DEBUG PropertySourcesPropertyResolver:103 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2016-09-01 15:41:09 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'server'
+2016-09-01 15:41:09 DEBUG App:26 - Server siap menerima koneksi pada port [15243]
+2016-09-01 15:41:09 DEBUG App:24 - Server memulai aktifitas.
+2016-09-01 15:52:26 DEBUG App:28 - Server menerima koneksi dari [127.0.0.1]
+2016-09-01 15:52:26 DEBUG App:44 - Receiving Network Management Request
+2016-09-01 16:15:19 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 16:15:19 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 16:15:19 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 16:15:19 INFO  AnnotationConfigApplicationContext:513 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@33073784: startup date [Thu Sep 01 16:15:19 WIB 2016]; root of context hierarchy
+2016-09-01 16:15:19 DEBUG AnnotationConfigApplicationContext:543 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@33073784: org.springframework.beans.factory.support.DefaultListableBeanFactory@45c6f6ff: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig]; root of factory hierarchy
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2016-09-01 16:15:19 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-09-01 16:15:19 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-09-01 16:15:19 DEBUG PathMatchingResourcePatternResolver:556 - Looking for matching resources in directory tree [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo]
+2016-09-01 16:15:19 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 16:15:19 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/util] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 16:15:19 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 16:15:19 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 16:15:19 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 16:15:19 DEBUG PathMatchingResourcePatternResolver:618 - Searching directory [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/model] for files matching pattern [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/**/*.class]
+2016-09-01 16:15:19 DEBUG PathMatchingResourcePatternResolver:357 - Resolved location pattern [classpath*:lab/aikibo/**/*.class] to resources [file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/util/StringUtil.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/App.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/HibernateConfiguration.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/AppConfig.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDao.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDaoImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ProcessRequest.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServicesImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ServerImpl.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/ErrorRespon.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/Server.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServices.class], file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/model/Sppt.class]]
+2016-09-01 16:15:19 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/config/HibernateConfiguration.class]
+2016-09-01 16:15:19 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/dao/StoreProceduresDaoImpl.class]
+2016-09-01 16:15:19 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [/home/tamami/belajar/learn-spring-jpos-hibernate/target/classes/lab/aikibo/services/SpptServicesImpl.class]
+2016-09-01 16:15:19 DEBUG StandardEnvironment:110 - Adding [class path resource [application.properties]] PropertySource with lowest search precedence
+2016-09-01 16:15:19 DEBUG ConfigurationClassBeanDefinitionReader:160 - Registered bean definition for imported @Configuration class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration
+2016-09-01 16:15:19 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.org.springframework.transaction.config.internalTransactionAdvisor()
+2016-09-01 16:15:19 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionAttributeSource()
+2016-09-01 16:15:19 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionInterceptor()
+2016-09-01 16:15:19 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.HibernateConfiguration.boneCPDs()
+2016-09-01 16:15:19 DEBUG ConfigurationClassBeanDefinitionReader:248 - Registering bean definition for @Bean method lab.aikibo.config.AppConfig.server()
+2016-09-01 16:15:19 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.AppConfig; enhanced class name is: lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$f737e18c
+2016-09-01 16:15:19 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'appConfig' existing class name 'lab.aikibo.config.AppConfig' with enhanced class name 'lab.aikibo.config.AppConfig$$EnhancerBySpringCGLIB$$f737e18c'
+2016-09-01 16:15:19 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced lab.aikibo.config.HibernateConfiguration; enhanced class name is: lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$f6bc5c11
+2016-09-01 16:15:19 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'hibernateConfiguration' existing class name 'lab.aikibo.config.HibernateConfiguration' with enhanced class name 'lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$f6bc5c11'
+2016-09-01 16:15:19 DEBUG ConfigurationClassEnhancer:102 - Successfully enhanced org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; enhanced class name is: org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f5945b6
+2016-09-01 16:15:19 DEBUG ConfigurationClassPostProcessor:377 - Replacing bean definition 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' existing class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' with enhanced class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f5945b6'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 16:15:19 DEBUG AnnotationConfigApplicationContext:649 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@1deda799]
+2016-09-01 16:15:19 DEBUG AnnotationConfigApplicationContext:673 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@1febb17a]
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:672 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@45c6f6ff: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,hibernateConfiguration,storeProceduresDao,spptServices,org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration,org.springframework.transaction.config.internalTransactionAdvisor,transactionAttributeSource,transactionInterceptor,boneCPDs,org.springframework.aop.config.internalAutoProxyCreator,server]; root of factory hierarchy
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'appConfig'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'appConfig'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'appConfig' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 16:15:19 DEBUG InjectionMetadata:71 - Registered injected element on class [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f5945b6]: AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG InjectionMetadata:85 - Processing injected method of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry'
+2016-09-01 16:15:19 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionAttributeSource'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionAttributeSource'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionAttributeSource' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionAttributeSource'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionInterceptor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionInterceptor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionInterceptor' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'transactionInterceptor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionInterceptor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'appConfig'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'hibernateConfiguration'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'hibernateConfiguration'
+2016-09-01 16:15:19 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.config.HibernateConfiguration$$EnhancerBySpringCGLIB$$f6bc5c11]: AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'hibernateConfiguration' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG InjectionMetadata:85 - Processing injected method of bean 'hibernateConfiguration': AutowiredFieldElement for private org.springframework.core.env.Environment lab.aikibo.config.HibernateConfiguration.environment
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'environment'
+2016-09-01 16:15:19 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'hibernateConfiguration' to bean named 'environment'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'hibernateConfiguration'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'storeProceduresDao'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'storeProceduresDao'
+2016-09-01 16:15:19 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.dao.StoreProceduresDaoImpl]: AutowiredFieldElement for private com.jolbox.bonecp.BoneCPDataSource lab.aikibo.dao.StoreProceduresDaoImpl.boneCPDs
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'storeProceduresDao' to allow for resolving potential circular references
+2016-09-01 16:15:19 DEBUG InjectionMetadata:85 - Processing injected method of bean 'storeProceduresDao': AutowiredFieldElement for private com.jolbox.bonecp.BoneCPDataSource lab.aikibo.dao.StoreProceduresDaoImpl.boneCPDs
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'boneCPDs'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'boneCPDs'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'hibernateConfiguration'
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemProperties]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [systemEnvironment]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.driverClassName' in [class path resource [application.properties]]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.driverClassName' in [class path resource [application.properties]] with type [String] and value 'oracle.jdbc.driver.OracleDriver'
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemProperties]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [systemEnvironment]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.url' in [class path resource [application.properties]]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.url' in [class path resource [application.properties]] with type [String] and value 'jdbc:oracle:thin:pbbdummy/pbbdummy@192.168.2.7:1521/sismiopbck'
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemProperties]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [systemEnvironment]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.username' in [class path resource [application.properties]]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.username' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemProperties]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [systemEnvironment]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'jdbc.password' in [class path resource [application.properties]]
+2016-09-01 16:15:19 DEBUG PropertySourcesPropertyResolver:90 - Found key 'jdbc.password' in [class path resource [application.properties]] with type [String] and value 'pbbdummy'
+2016-09-01 16:15:19 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'boneCPDs' to allow for resolving potential circular references
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'boneCPDs'
+2016-09-01 16:15:20 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'storeProceduresDao' to bean named 'boneCPDs'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'storeProceduresDao'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'spptServices'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'spptServices'
+2016-09-01 16:15:20 DEBUG InjectionMetadata:71 - Registered injected element on class [lab.aikibo.services.SpptServicesImpl]: AutowiredFieldElement for private lab.aikibo.dao.StoreProceduresDao lab.aikibo.services.SpptServicesImpl.spDao
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'spptServices' to allow for resolving potential circular references
+2016-09-01 16:15:20 DEBUG InjectionMetadata:85 - Processing injected method of bean 'spptServices': AutowiredFieldElement for private lab.aikibo.dao.StoreProceduresDao lab.aikibo.services.SpptServicesImpl.spDao
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'storeProceduresDao'
+2016-09-01 16:15:20 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'spptServices' to bean named 'storeProceduresDao'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:20 DEBUG AnnotationTransactionAttributeSource:108 - Adding transactional method 'SpptServicesImpl.getSpptByNopThn' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2016-09-01 16:15:20 DEBUG InfrastructureAdvisorAutoProxyCreator:593 - Creating implicit proxy for bean 'spptServices' with 0 common interceptors and 1 specific interceptors
+2016-09-01 16:15:20 DEBUG JdkDynamicAopProxy:117 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [lab.aikibo.services.SpptServicesImpl@14fa3c9f]
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'spptServices'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionAttributeSource'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'transactionInterceptor'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'boneCPDs'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'server'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'server'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'appConfig'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'server' to allow for resolving potential circular references
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'server'
+2016-09-01 16:15:20 DEBUG AnnotationConfigApplicationContext:700 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@68bb5f4c]
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-09-01 16:15:20 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2016-09-01 16:15:20 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2016-09-01 16:15:20 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [application.properties]]
+2016-09-01 16:15:20 DEBUG PropertySourcesPropertyResolver:103 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2016-09-01 16:15:20 DEBUG DefaultListableBeanFactory:247 - Returning cached instance of singleton bean 'server'
+2016-09-01 16:15:20 DEBUG App:26 - Server siap menerima koneksi pada port [15243]
+2016-09-01 16:15:20 DEBUG App:24 - Server memulai aktifitas.

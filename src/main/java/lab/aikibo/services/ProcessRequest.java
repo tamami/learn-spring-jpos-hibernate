@@ -2,6 +2,7 @@ package lab.aikibo.services;
 
 import lab.aikibo.App;
 import lab.aikibo.model.Sppt;
+import lab.aikibo.util.StringUtil;
 
 import org.jpos.iso.ISORequestListener;
 import org.jpos.iso.ISOMsg;
@@ -31,6 +32,8 @@ public class ProcessRequest implements ISORequestListener {
         processLogon(isoSrc, isoMsg);
       } else if(isoMsg.getMTI().equalsIgnoreCase("0200")) {
         processFinTx(isoSrc, isoMsg);
+      } else if(isoMsg.getMTI().equalsIgnoreCase("1800")) {
+        processQMux(isoSrc, isoMsg);
       }
     } catch(ISOException isoe) {
       App.getLogger().debug("Kesalahan ISO di ProcessRequest.process: " + isoe);
@@ -98,12 +101,22 @@ public class ProcessRequest implements ISORequestListener {
     }
 
     // susun bit 48
+    String bufferBit48 = "137";
+    bufferBit48 += sppt.getNop();
+    bufferBit48 += sppt.getThn();
+    bufferBit48 += StringUtil.stringPadRight(sppt.getNama(), 30);
+    bufferBit48 += StringUtil.stringPadRight(sppt.getAlamatOp(), 45);
+    bufferBit48 += "3329";
+    bufferBit48 += StringUtil.numericPad(sppt.getPokok().toString(), 12);
+    bufferBit48 += StringUtil.numericPad(sppt.getDenda().toString(), 12);
 
     try {
       reply.setMTI("0210");
       reply.set(7, new SimpleDateFormat("MMddHHmmss").format(new Date()));
       reply.set(39, "00");
-      reply.set(48, );
+      reply.set(48, bufferBit48);
+
+      isoSrc.send(reply);
     } catch(IOException ioe) {
       App.getLogger().debug("Kesalahan IO di ProcessRequest.processInquiry: " + ioe);
     } catch(ISOException isoe) {
@@ -112,5 +125,21 @@ public class ProcessRequest implements ISORequestListener {
   }
 
   private void processTrx(ISOSource isoSrc, ISOMsg isoMsg) {}
+
+  private void processQMux(ISOSource isoSrc, ISOMsg isoMsg) {
+    App.getLogger().debug("Receiving Network Management Request from Client QMUX");
+    ISOMsg reply = (ISOMsg) isoMsg.clone();
+    try {
+      reply.setMTI("1810");
+      reply.set(7, new SimpleDateFormat("MMddHHmmss").format(new Date()));
+      reply.set(39, "00");
+
+      isoSrc.send(reply);
+    } catch(IOException ioe) {
+      App.getLogger().debug("Kesalahan IO di ProcessRequest.processQMux: " + ioe);
+    } catch(ISOException isoe) {
+      App.getLogger().debug("Kesalahan ISO di ProcessRequest.processQMux: " + isoe);
+    }
+  }
 
 }
